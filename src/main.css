@@ -1,0 +1,9 @@
+.btn {
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+#btn-delete:hover,
+#btn-delete:active {
+  background-color: #ff9191;
+}

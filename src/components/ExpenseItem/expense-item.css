@@ -1,22 +1,25 @@
-img {
-    width: 40px;
-    height: 40px;
-}
-
-h4 {
+.expense-item h4 {
     margin: 2px;
     padding: 0px;
 }
 
-p {
+.expense-item p {
     margin: 2px;
     padding: 0px;
     color: RGB(147, 154, 172);
 }
 
-.expense-item {
-    width: 80%;
+.expense-item img {
+    width: 40px;
+    height: 40px;
 
+    padding: 8px;
+    background-color: RGB(229, 243, 254);
+
+    border-radius: 14px;
+}
+
+.expense-item {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -27,6 +30,7 @@ p {
     border-radius: 15px;
 
     padding: 20px;
+    margin: 0px auto 10px;
 }
 
 .expense-body {
@@ -53,4 +57,8 @@ p {
 
 .header-text {
     margin-left: 20px;
+}
+
+#btn-delete {
+    padding: 14px;
 }

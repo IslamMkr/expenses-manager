@@ -1,33 +1,35 @@
-import React from 'react'
-import ExpenseItem from './components/ExpenseItem/ExpenseItem'
+import Wallet from './components/Wallet/Wallet'
 
 const App = () => {
-    const randomData = [
+    const expenses = [
         {
+            "id": 1,
             "name": "Restaurants & Cafe",
             "date": "12 January 2022",
             "ammount": 45.85
         },
         {
+            "id": 2,
             "name": "Clothing",
             "date": "25 January 2022",
             "ammount": 124.25
         },
         {
+            "id": 3,
             "name": "Health Care",
             "date": "25 December 2021",
             "ammount": 10.00
         }
     ]
 
+    const wallet = {
+        "name": "Home Wallet"
+    }
+
     return (
-        <div>
-            <h2>Let's get started!</h2>
-            {
-                randomData.map ( data =>
-                    <ExpenseItem expense={data} />
-                )
-            }
+        <div className='container'>
+            <h1>Let's get started!</h1>
+            <Wallet wallet={wallet} expenses={expenses} />
         </div>
     )
 }

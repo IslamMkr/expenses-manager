@@ -1,0 +1,30 @@
+.wallet-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0px 50px;
+}
+
+#wallet-icon {
+    width: 40px;
+    height: 40px;
+}
+
+.wallet-header-text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0px;
+}
+
+.wallet-header-text h2 {
+    margin-left: 30px;
+}
+
+.calendar {
+    width: 20%;
+    height: 40px;
+
+    background-color: white;
+}

@@ -1,21 +1,31 @@
-import React from 'react'
-
 import './expense-item.css'
+import '../../main.css'
 
-const ExpenseItem = ({name, date, ammount}) => {
+const expensesIcon = require('../../images/expenses.png')
+const xIcon = require('../../images/x.png')
+
+const ExpenseItem = ({expense}) => {
+    const deleteExpenseClickHandler = () => {
+        // TODO: handle delete expense
+    }
+
     return (
         <div className="expense-item">
             <div className="expense-body">
                 <div className="expense-header">
-                    <img src="#" alt="Expense Icon" />
+                    <img src={expensesIcon} alt="Expense Icon" />
                     <div className='header-text'>
-                        <h4>{name}</h4>
-                        <p>{date}</p>
+                        <h4>{expense.name}</h4>
+                        <p>{expense.date}</p>
                     </div>
                 </div>
-                <h4>-${ammount}</h4>
+                <h4>-${expense.ammount}</h4>
             </div>
-            <img src="#" alt="Delete Expense" />
+            <img src={xIcon} 
+                alt="Delete Expense" 
+                id="btn-delete" 
+                className='btn'
+                onClick={deleteExpenseClickHandler} />
         </div>
     )
 }
